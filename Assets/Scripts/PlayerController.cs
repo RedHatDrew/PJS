@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
 
             else if (Input.GetAxis("Horizontal") < 0.0f)
             {
-                transform.Translate((-Vector3.left * moveSpeed) * Time.deltaTime);
+                transform.Translate(Vector3.left * -moveSpeed * Time.deltaTime);
                 transform.rotation = Quaternion.Euler(0, -180, 0);
                 //print("Go left");
             }
